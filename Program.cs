@@ -8,23 +8,23 @@
 
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-// //Task 41
-// Console.WriteLine("Task 41");
-// Console.WriteLine("введите числа через запятую и пробел и нажмите enter:");
-// string masNumbString=Console.ReadLine();
-// int[] numbers = masNumbString.Split(',').Select(snum => int.Parse(snum)).ToArray();
+//Task 41
+Console.WriteLine("Task 41");
+Console.WriteLine("введите числа через запятую и пробел и нажмите enter:");
+string masNumbString=Console.ReadLine();
+int[] numbers = masNumbString.Split(',').Select(snum => int.Parse(snum)).ToArray();
 
-// int numChisel(int [] masint)
-// {
-//     int k=0;
-//     for (int i=0; i<masint.Length; i++)
-//     {
-//     if (masint[i]>0) {++k;}
+int numChisel(int [] masint)
+{
+    int k=0;
+    for (int i=0; i<masint.Length; i++)
+    {
+    if (masint[i]>0) {++k;}
     
-//     }
-//     return k;
-// }
-// Console.WriteLine($"Количесвто введеных положительных чисел = {numChisel(numbers)}");
+    }
+    return k;
+}
+Console.WriteLine($"Количесвто введеных положительных чисел = {numChisel(numbers)}");
 
 //Task 43
 Console.WriteLine("Task 43");
